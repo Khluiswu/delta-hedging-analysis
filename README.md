@@ -152,4 +152,6 @@ Some directions to take this further:
 - Hull, J. (2022). *Options, Futures, and Other Derivatives* (11th ed.)
 
 ---
+## License
 
+This project is for research and educational purposes
