@@ -4,6 +4,8 @@
 
 A Python project that simulates the P&L of a delta-hedged short call position across five stress scenarios, using real market data from **yfinance** and bootstrapped Monte Carlo paths.
 
+I studied how discretely hedged option positions generate non-zero PnL even under correct pricing assumptions, and analysed how volatility misspecification and hedge frequency affect tail risk and CVaR.
+
 ---
 
 ## What It Does
@@ -126,16 +128,6 @@ All PnL distributions show **negative skew** — the defining signature of a sho
 - **Weekly rebalancing** quadruples variance compared to daily, with roughly equal mean — pure gamma risk accumulation
 - **Jump paths** produce CVaR₉₅ of **−$23.7** vs −$2.0 baseline — delta hedging offers almost no protection against gap moves
 - **Transaction costs** at 5 bps/trade add a steady drag that compounds significantly at daily frequency
-
----
-
-## Interview Framing
-
-Don't say:
-> *"I implemented Black-Scholes and simulated hedging."*
-
-Say:
-> *"I studied how discretely hedged option positions generate non-zero PnL even under correct pricing assumptions, and analysed how volatility misspecification and hedge frequency affect tail risk and CVaR."*
 
 ---
 
